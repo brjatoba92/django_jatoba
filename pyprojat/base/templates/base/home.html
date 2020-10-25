@@ -10,6 +10,7 @@
 
     <meta name="description" content="Página de projeto do curso Python Pro no Modulo Django">
     <meta name="author" content="Bruno Jatobá">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
 
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -34,41 +35,39 @@
   </nav>
 
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
+	    <div class="row">
+		    <div class="col-md-12">
 
-			<div class="jumbotron">
-				<h2>
-					Hello, world!
-				</h2>
-				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							Card title
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								Card content
-							</p>
-						</div>
-						<div class="card-footer">
-							Card footer
-						</div>
+			    <div class="jumbotron">
+				    <h2>
+					    Curso de Python com Luciano Ramalho
+				    </h2>
+				    <p>
+					    Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro
+					    <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">Python Fluente</a>.
+				    </p>
+
+			    </div>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<h5 class="card-header">
+						Mais detalhes sobre o instrutor
+					</h5>
+					<div class="card-body">
+						<p class="card-text">
+							<img src="{% static 'img/luciano_ramalho.jpg' %}" alt="Foto de Luciano Ramalho" class="img-thumbnail float-left mr-3"/>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+							"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
-  </body>
-</html>
+    </body>
+    </html>
