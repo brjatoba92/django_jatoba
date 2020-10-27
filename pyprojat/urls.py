@@ -19,11 +19,12 @@ from django.urls import path, include
 
 # from pyprojat.base.views import home
 
-urlpatterns = [
+urlpatterns = {
     path('admin/', admin.site.urls),
     # path('', home, name='home'),
-    path('', include('pyprojat.base.urls'))
-]
+    path('', include('pyprojat.base.urls')),
+    path('aperitivos/', include('pyprojat.aperitivos.urls')),
+}
 
 if settings.DEBUG:
     import debug_toolbar
