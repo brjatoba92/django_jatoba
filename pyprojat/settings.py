@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pyprojat.base',
+    'pyprojat.aperitivos',
 ]
 
 MIDDLEWARE = [
