@@ -1,39 +1,7 @@
-  {% load static %}
-  <!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Python Pro</title>
-
-    <meta name="description" content="Página de projeto do curso Python Pro no Modulo Django">
-    <meta name="author" content="Bruno Jatobá">
-	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
-
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/scripts.js' %}"></script>
-
-  </head>
-  <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-      </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <ul class="navbar-nav mr-auto">
-
-		  </ul>
-	  </div>
-  </nav>
-
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Python Pro - Home{% endblock title %}
+{% block body %}
     <div class="container">
 	    <div class="row">
 		    <div class="col-md-12">
@@ -42,78 +10,50 @@
 				    <h2>
 					    Curso de Python com Luciano Ramalho
 				    </h2>
-					<!-- INICIO DO FORMULARIO BOTAO MERCADO PAGO-->
-					<h4 class="mt-4"> Matriculas abertas. Custo R$ 1000,00 </h4>
-					<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                    data-preference-id="176504601-9380cdb5-d162-4242-8a00-053a3defa8eb">
+				    <!-- INICIO DO FORMULARIO BOTAO MERCADO PAGO-->
+				    <h4 class="mt-4"> Matriculas abertas. Custo R$ 1000,00 </h4>
+				    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+				    data-preference-id="176504601-9380cdb5-d162-4242-8a00-053a3defa8eb">
                     </script>
 
-					<h4 class="mt-4"> Maiores duvidas, entre em contato conosco</h4>
-					<form action="https://herokuapp.us2.list-manage.com/subscribe/post?u=9e3b00b53a254ec91706ebf30&amp;id=aaa6e3636d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div class="form-row align-items-center">
-							<div class="col-auto">
-						        <label class="sr-only" for="mce-EMAIL">Email</label>
-						        <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="exemplo@email.com">
+				    <h4 class="mt-4"> Maiores duvidas, entre em contato conosco</h4>
+				    <form action="https://herokuapp.us2.list-manage.com/subscribe/post?u=9e3b00b53a254ec91706ebf30&amp;id=aaa6e3636d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div class="form-row align-items-center">
+						    <div class="col-auto">
+							    <label class="sr-only" for="mce-EMAIL">Email</label>
+							    <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="exemplo@email.com">
 						    </div>
-							<div class="col-auto">
-						        <label class="sr-only" for="mce-FNAME">Email</label>
-						        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Seu nome">
+						    <div class="col-auto">
+							    <label class="sr-only" for="mce-FNAME">Email</label>
+							    <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Seu nome">
 						    </div>
 
-							<!-- real people-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9e3b00b53a254ec91706ebf30_aaa6e3636d" tabindex="-1" value=""></div>
+						    <!-- real people-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9e3b00b53a254ec91706ebf30_aaa6e3636d" tabindex="-1" value=""></div>
 
 						    <div class="col-auto">
-						        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+							    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
 						    </div>
-				        </div>
-		            </form>
+					    </div>
+				    </form>
 			    </div>
 		    </div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card">
-					<h5 class="card-header">
-						Mais detalhes sobre o instrutor
-					</h5>
-					<div class="card-body">
-						<p class="card-text">
-							<img src="{% static 'img/luciano_ramalho.jpg' %}" width="300" height="185" alt="Foto de Luciano Ramalho" class="img-thumbnail float-left mr-3"/>
-							<a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">Python Fluente</a>. "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
-							"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-  <footer class="main-footer mt-5 pt-4 text-light">
-	  <div class="container">
-		  <div class="row">
-			  <div class="col">
-				  <h3>Entre em contato</h3>
-				  <address>
-					  +55 55 94444-3322
-					  </br>
-					  <a href="mailto: ramalho@python.pro.br" class="text-light">ramalho@python.pro.br
-					  </a>
-				  </address>
-			  </div>
-		  </div>
-	  </div>
-	  <div class="rights pb-4 text-light">
-	      <div class="container">
-		      <div class="row">
-			      <div class="col">
-				      {% now 'Y' %} Python Pro. Todos os direitos reservados.
-			      </div>
-		      </div>
-	      </div>
-	  </div>
-  </footer>
-
-
-    </body>
-    </html>
+	    </div>
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div class="card">
+				    <h5 class="card-header">
+					    Mais detalhes sobre o instrutor
+				    </h5>
+				    <div class="card-body">
+					    <p class="card-text">
+						    <img src="{% static 'img/luciano_ramalho.jpg' %}" width="300" height="185" alt="Foto de Luciano Ramalho" class="img-thumbnail float-left mr-3"/>
+						    <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">Python Fluente</a>. "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+						    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					    </p>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+{% endblock body %}
