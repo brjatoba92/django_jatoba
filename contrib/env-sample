@@ -1,6 +1,7 @@
 DEBUG=False
 SECRET_KEY=Defina sua chave secreta
-DATABASE_URL=postgres://postgres:postgres@127.0.0.1/testdb
+# DATABASE_URL=postgres://postgres:postgres@127.0.0.1/testdb
+DATABASE_URL=postgres://postgres:postgres@127.0.0.1/postgres
 # AWS_ACCESS_KEY_ID=
 # AWS_SECRET_ACCESS_KEY=
 # AWS_STORAGE_BUCKET_NAME=
