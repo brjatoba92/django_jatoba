@@ -16,7 +16,7 @@ videos = [
         Video('motivacao', 'Vídeo Aperitivo: Motivação', 472243892),
         Video('instalacao-windows', 'Aula 1: Instalação Windows', 473186781),
         Video('instalacao-macos', 'Aula 2: Instalação MacOS', 473187531),
-        Video('instalacao-ubuntu', 'Aula 3: Instalação Python Ubuntu', 473187848),
+        Video('instalacao-ubuntu', 'Aula 3: Instalação Ubuntu', 473187848),
 ]
 
 videos_dct = {v.slug: v for v in videos}
