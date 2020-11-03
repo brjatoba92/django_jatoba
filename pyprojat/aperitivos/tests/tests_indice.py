@@ -19,7 +19,7 @@ def test_status_code(resp):
         'Vídeo Aperitivo: Motivação',
         'Aula 1: Instalação Windows',
         'Aula 2: Instalação MacOS',
-        'Aula 3: Instalação Python Ubuntu'
+        'Aula 3: Instalação Ubuntu'
     ]
 )
 def test_titulo_video(resp, titulo):
