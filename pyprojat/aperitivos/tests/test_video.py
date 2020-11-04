@@ -4,12 +4,12 @@ from django.urls import reverse
 from pyprojat.aperitivos.models import Video
 from pyprojat.django_assertions import assert_contains
 
+from model_mommy import mommy
+
 
 @pytest.fixture
 def video(db):
-    v = Video(slug='motivacao', titulo='Vídeo Aperitivo: Motivação', vimeo_id='472243892')
-    v.save()
-    return v
+    return mommy.make(Video)
 
 
 @pytest.fixture
