@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pyprojat.base',
     'pyprojat.aperitivos',
+    'pyprojat.modulos',
 ]
 
 MIDDLEWARE = [
