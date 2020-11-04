@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
+        <schema name="public" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
@@ -35,6 +39,14 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2" dataset="public.aperitivos_video" active-filter-id="3da9ec0e-85b0-49d5-b8fa-7e443fa28585">
+      <filter id="3da9ec0e-85b0-49d5-b8fa-7e443fa28585" name="motivacao" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="slug" operator="=" value="motivacao" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2" dataset="public.django_migrations" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
