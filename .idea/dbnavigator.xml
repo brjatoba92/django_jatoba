@@ -25,7 +25,8 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
-        <schema name="public" object-types="dataset trigger, sequence, constraint, view, index, column, table, function" />
+        <schema name="pg_catalog" object-types="function" />
+        <schema name="public" object-types="sequence, function, table, index, constraint, column, dataset trigger, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -46,6 +47,7 @@
         <condition column="slug" operator="=" value="motivacao" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2" dataset="public.modulos_modulo" active-filter-id="" />
     <filter-actions connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2" dataset="public.django_migrations" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
