@@ -31,7 +31,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
-      <console name="djangojatoba" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT m.id, m.titulo, a.id, a.titulo, a.modulo_id FROM modulos_modulo AS m JOIN modulos_aula a on m.id = a.modulo_id;]]></console>
+      <console name="djangojatoba" type="STANDARD" schema="information_schema" session="Main" />
       <console name="postgres 1" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
   </component>
