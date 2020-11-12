@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'pyprojat.base',
     'pyprojat.aperitivos',
     'pyprojat.modulos',
+    'pyprojat.turmas',
     'ordered_model',
     'django_extensions',
 ]
