@@ -23,16 +23,35 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
-        <schema name="public" object-types="view, function, sequence, table" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2a38d163-cd81-4187-a460-2ddcd3b3fdc2">
       <console name="djangojatoba" type="STANDARD" schema="information_schema" session="Main" />
-      <console name="postgres 1" type="STANDARD" schema="information_schema" session="Main" />
+      <console name="postgres 1" type="STANDARD" schema="public" session="Main"><![CDATA[--SELECT
+--    turma.id,
+--    turma.nome,
+--    matricula.*,
+--    base_user.id,
+--    base_user.email
+    
+--FROM
+--    turmas_turma AS turma
+--INNER JOIN turmas_turma_matriculas AS matricula on turma_id = matricula.turma_id
+--INNER JOIN base_user on matricula.user_id = base_user.id
+
+SELECT
+    turma.id,
+    turma.nome,
+    matricula.*,
+    base_user.id,
+    base_user.email
+    
+FROM
+    turmas_turma AS turma
+INNER JOIN turmas_turma_matriculas AS matricula on turma_id = matricula.turma_id
+INNER JOIN base_user on matricula.user_id = base_user.id
+WHERE base_user.id=1]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
